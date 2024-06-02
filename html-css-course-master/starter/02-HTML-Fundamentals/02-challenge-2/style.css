@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/*Product*/
+
+.product {
+  border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 22px;
+  background-color: #f7f7f7;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.product-details {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+/*product info*/
+
+.price {
+  font-size: 24px;
+}
+
+.shipping {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+a:link,
+a:visited {
+  color: black;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: black;
+  font-size: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  border-top: 4px solid black;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+ul {
+  list-style: square;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.description {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.squares div {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.squares div:first-child {
+  margin-left: 0px;
+}
+
+.one-square {
+  background-color: rgb(0, 0, 0);
+}
+
+.two-square {
+  background-color: rgb(22, 112, 230);
+}
+
+.three-square {
+  background-color: rgb(255, 72, 72);
+}
+
+.four-square {
+  background-color: rgb(248, 185, 13);
+}
+
+.five-square {
+  background-color: rgb(166, 255, 24);
+}
+
+.six-square {
+  background-color: rgb(168, 76, 0);
+}
+
+.sale {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px 15px;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+/* FLOAT */
+.img {
+  float: left;
+}
+.container-1 {
+  float: left;
+  width: 243px;
+  margin: 20px 40px;
+}
+
+.container-2 {
+  width: 243px;
+  float: left;
+}
+
+.price {
+  float: left;
+}
+
+.shipping {
+  float: right;
+  margin-top: 8px;
+}
+
+.description {
+  clear: both;
+  margin-top: 50px;
+}
