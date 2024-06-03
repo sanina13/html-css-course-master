@@ -28,7 +28,8 @@ body {
 
 .product-details {
   text-transform: uppercase;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 /*product info*/
@@ -73,7 +74,7 @@ button:hover {
 
 ul {
   list-style: square;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 li {
@@ -81,21 +82,24 @@ li {
   margin-left: 20px;
 }
 
+li:last-child {
+  margin-bottom: 0;
+}
+
 .description {
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .squares div {
   width: 22px;
   height: 22px;
-  display: inline-block;
-  margin-left: 10px;
+  /*   display: inline-block;
+  margin-left: 10px; */
 }
 
-.squares div:first-child {
+/* .squares div:first-child {
   margin-left: 0px;
-}
+} */
 
 .one-square {
   background-color: rgb(0, 0, 0);
@@ -134,7 +138,7 @@ li {
   left: -38px;
 }
 /* FLOAT */
-.img {
+/* .img {
   float: left;
 }
 .container-1 {
@@ -160,4 +164,30 @@ li {
 .description {
   clear: both;
   margin-top: 50px;
+} */
+/* FLEXBOX*/
+.info-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.squares {
+  display: flex;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.container-1 {
+  flex: 1;
+}
+
+.container-2 {
+  flex: 1;
 }
