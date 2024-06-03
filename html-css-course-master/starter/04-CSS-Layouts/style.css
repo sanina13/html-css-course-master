@@ -197,7 +197,7 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
+
   display: inline-block;
 }
 
@@ -267,7 +267,7 @@ nav p {
 } */
 
 /* FLOATS */
-
+/* 
 .author-img {
   float: left;
   margin-bottom: 20px;
@@ -275,7 +275,7 @@ nav p {
 
 .author {
   /* padding-left: 30px; */
-  float: left;
+/*  float: left;
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -310,4 +310,57 @@ aside {
 
 footer {
   clear: both;
+}
+ */
+/*FLEXBOX*/
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.author-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.line {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.main-content {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+
+article {
+  flex: 0 0 825;
+}
+
+aside {
+  flex: 0 0 300px;
 }
