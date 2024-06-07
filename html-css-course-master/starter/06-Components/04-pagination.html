@@ -35,12 +35,13 @@
         font-family: "Inter", sans-serif;
         color: #343a40;
         line-height: 1;
+        display: flex;
+        justify-content: center;
       }
       .pagination {
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 25px;
+        gap: 12px;
         margin-top: 200px;
       }
 
@@ -48,22 +49,19 @@
       a:link,
       a:visited {
         text-decoration: none;
-        color: #000;
+        color: #343a40;
         font-size: 18px;
         border-radius: 50%;
-        text-align: center;
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       a:hover,
-      a:active {
-        background-color: #087f5b;
-        color: #fff;
-      }
-
-      a:nth-child(4) {
+      a:active,
+      .page-link.page-current {
         background-color: #087f5b;
         color: #fff;
       }
@@ -74,11 +72,12 @@
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        border: 2px solid #087f5b;
+        border: 1px solid #087f5b;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        background: none;
       }
 
       button:hover,
@@ -91,6 +90,10 @@
         width: 24px;
         height: 24px;
         stroke: #087f5b;
+      }
+
+      span {
+        color: #868e96;
       }
     </style>
   </head>
@@ -114,7 +117,7 @@
       </button>
       <a href="#">1</a>
       <a href="#">2</a>
-      <a href="#">3</a>
+      <a href="#" class="page-link page-current">3</a>
       <a href="#">4</a>
       <a href="#">5</a>
       <a href="#">6</a>
