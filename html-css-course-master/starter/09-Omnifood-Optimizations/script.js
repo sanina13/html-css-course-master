@@ -11,9 +11,52 @@ h1.addEventListener("click", function () {
   h1.style.backgroundColor = "red";
   h1.style.padding = "5rem";
 }); */
+
+// Set current year
 const yearSpan = document.querySelector(".year");
 const dataAtual = new Date().getFullYear();
 yearSpan.textContent = dataAtual;
+
+///////////////////////////////////////////////////////////
+//Make mobile navigation work
+
+("nav-open");
+
+const btn = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
+btn.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
+});
+
+////////////////////////////////////////////////////
+// Smoth scrolling animation
+
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    console.log(href);
+
+    if (link.classList.contains("main-nav-link")) {
+      header.classList.toggle("nav-open");
+    }
+
+    // Scroll back to top
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    else {
+      const secEl = document.querySelector(href);
+      secEl.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
+});
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
